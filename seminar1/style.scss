@@ -1,0 +1,57 @@
+@import 'vars';
+@import 'mixins';
+
+%fontStyle {
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.header {
+    font-size: xx-large;
+}
+
+.text {
+    font-size: 40px;
+    color: #df5997;
+}
+
+.span_text {
+    color: $colorPage;
+}
+
+// /* много строчкный комментарий ALT SHIFT A */
+// строчка
+// строчка
+// строчка
+/* строчка
+строчка
+строчка
+строчка */
+
+.nav {
+    display: flex;
+    gap: $gapNav;
+
+    &__link {
+        text-decoration: none;
+        @extend %fontStyle;
+    }
+}
+
+.content {
+    gap: $gapNav;
+    @include centerFlex(start);
+
+    &__item {
+        width: calc($sizeWidthPage / 4);
+        background-color: $colorPage;
+        height: 200px;
+        border: $borderSite;
+    }
+}
