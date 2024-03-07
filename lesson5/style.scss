@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// .top {
+//     background-color: #ccc;
+//     min-height: 100vh;
+//     // width: 100vw;
+//     // border: 5px solid red;
+//     box-sizing: border-box;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .title {
+//     width: 50vw;
+//     text-align: center;
+// }
+
+// .block {
+//     position: relative;
+//     min-height: 100vh;
+//     background-color: #234567;
+
+//     &__header {
+//         height: 150px;
+//         background-color: #555;
+//         position: sticky;
+//         top: 100px;
+//         left: 0;
+//         width: 250px;
+//     }
+// }
+
+// .item {
+//     background-color: forestgreen;
+//     min-height: 100vh;
+// }
+
+// html {
+//     font-size: 16px; //1rem === 16px
+// }
+
+// //1rem = 20px
+
+// .title2 {
+//     // font-size: 2.8rem;
+//     // font-size: 32px; //32px / 16px = 2rem
+//     font-size: 2rem;
+//     margin-bottom: 5rem;
+// }
+
+// .heading2 {
+//     // font-size: 2.6rem; 
+//     // font-size: 24px; //24px / 16px = 1.5rem
+//     font-size: 1.5rem;
+
+// }
+
+// .text2 {
+//     // font-size: 16px; //16px / 16px = 1rem
+//     font-size: 1rem;
+// }
+
+// .subtitle2 {
+//     font-size: 1.2rem;
+// }
+
+// .item {
+//     // flex-grow: 1;
+//     flex-shrink: 1;
+//     width: 250px;
+//     // flex-basis: 100px;
+//     // width: 100px;
+//     height: 100px;
+//     border: 1px solid #000;
+// }
+
+// .item_2 {
+//     flex-shrink: 2;
+// }
+
+// .content {
+//     display: flex;
+//     // flex-wrap: wrap;
+// }
+
+// @media (max-width: 768px) {
+// .title2 {
+//     // font-size: 2.8rem;
+//     font-size: 28px;
+// }
+
+// .heading2 {
+//     // font-size: 2.6rem;
+//     font-size: 21px;
+// }
+
+// .text2 {
+//     font-size: 14px;
+// }
+
+//проще для HTML задать rem один раз
+//     html {
+//         font-size: 14px; //1rem === 14px
+//     }
+// }
+
+// @media (max-width: 425px) {
+//     .title2 {
+//         // font-size: 2.8rem;
+//         font-size: 24px;
+//     }
+
+//     .heading2 {
+//         // font-size: 2.6rem;
+//         font-size: 18px;
+//     }
+
+//     .text2 {
+//         font-size: 12px;
+//     }
+//     html {
+//         font-size: 12px; //1rem === 12px
+//     }
+// }
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    // align-items: center;
+    gap: 16px;
+    // max-width: 1000px;
+    // margin: auto;
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+    grid-auto-flow: dense;
+}
+
+.item {
+    border: 1px solid #000;
+    min-height: 100px;
+
+
+    &_3 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+// @media (max-width: 768px) {
+//     .content {
+//         // display: grid;
+//         grid-template-columns: repeat(4, 1fr);
+//     }
+// }

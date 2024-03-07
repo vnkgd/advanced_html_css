@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Псевдо элемент :has (.box-content:has(.text))</h1>
+    <section class="box-content">
+        <p class="text"></p>
+    </section>
+    <section class="box-content"></section>
+    <section class="box-content">
+        <p class="text"></p>
+    </section>
+    <section class="box-content"></section>
+    <section class="box-content">
+        <p class="text"></p>
+    </section>
+
+    <h1>Псевдо элемент :has (:nth-of-type(Xn))</h1>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div class="title">Элемент1</div>
+    <section>
+        <div class="title">Элемент01</div>
+        <div class="title">Элемент02</div>
+        <div class="title">Элемент03</div>
+    </section>
+    <div class="title">Элемент2</div>
+    <div class="title">Элемент3</div>
+    <div class="title">Элемент4</div>
+    <div class="title">Элемент5</div>
+    <div class="title">Элемент6</div>
+    <div class="title">Элемент7</div>
+    <div class="title">Элемент8</div>
+    <div class="title">Элемент9</div>
+
+    <h1>Псевдо элемент для стилизации первой буквы ::first-letter</h1>
+
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quo similique incidunt eius eaque
+        beatae recusandae laboriosam molestias repellat fugit. Accusantium ea esse temporibus hic iste, debitis est sint
+        adipisci praesentium voluptas quo repudiandae itaque tempore magnam corporis similique fugiat sapiente accusamus
+        aut alias. Eligendi ea odit omnis eaque illo repellendus, debitis sit eius sequi non earum, incidunt delectus
+        possimus, quia perferendis quam corrupti alias aperiam iure neque enim. Veritatis cum suscipit deserunt eius
+        ullam, vel quod quas similique minus! Quod obcaecati eos in porro consequatur libero inventore nostrum fuga rem?
+        Nesciunt quas tempora, rerum maxime ad commodi tempore in repellat minus blanditiis magni consequatur, suscipit,
+        vel aspernatur doloribus sit dolorum sequi ipsum distinctio porro quasi adipisci error fuga. Sequi nostrum dicta
+        beatae necessitatibus doloribus exercitationem velit, dolores odio illo at eos voluptates, reiciendis a.
+        Distinctio quod harum, praesentium officiis vero ducimus ipsam libero at ullam possimus consectetur corporis,
+        totam aliquid assumenda velit repellendus et maxime, cum sed quam dolor. Assumenda sint enim dicta eum
+        consequatur adipisci iste perspiciatis accusamus totam quibusdam nemo ullam dolore fugit nam eligendi earum quos
+        nostrum dignissimos quisquam soluta excepturi ex, modi exercitationem provident! Assumenda repudiandae fuga
+        tenetur beatae excepturi temporibus voluptatibus rem enim maiores esse, iusto ipsum quos doloribus eveniet
+        cumque sit veniam asperiores ea saepe nam. Consectetur vero maxime, aspernatur assumenda odio maiores, eaque
+        ipsum illum dolore enim numquam sint officia quos sequi voluptatem qui! Error, dicta. Voluptates quibusdam
+        deserunt itaque inventore suscipit ipsa tempora voluptas vitae id quam, et beatae vero, voluptate, aliquid ut
+        necessitatibus praesentium? Qui est repudiandae voluptatibus molestias necessitatibus, saepe adipisci ullam
+        exercitationem fuga id harum expedita recusandae maiores, sunt nesciunt placeat vel laudantium excepturi veniam.
+        Fuga consectetur voluptate tenetur autem sint numquam error maxime doloremque assumenda reprehenderit quaerat
+        tempora accusamus adipisci fugiat iste, iure aliquid? Magnam, accusantium in?</p>
+
+    <h1>Вложенность с помощью CSS без использования препроцессоров. Ссылка2 суб меню</h1>
+    <nav class="navigation">
+        <ul>
+            <li><a href="" class="link">Ссылка1</a></li>
+            <li><a href="" class="link">Ссылка2</a>
+                <ul class="submenu">
+                    <li><a href="" class="sublink">Подссылка</a></li>
+                    <li><a href="" class="sublink">Подссылка</a></li>
+                    <li><a href="" class="sublink">Подссылка</a></li>
+                </ul>
+            </li>
+            <li><a href="" class="link">Ссылка3</a></li>
+            <li><a href="" class="link">Ссылка4</a></li>
+        </ul>
+    </nav>
+    <h1>Новый элемент @scope</h1>
+    <h2 class="title2">Lorem, ipsum dolor.</h2>
+    <div class="subtitle">
+        <p class="title2">Lorem, ipsum dolor.</p>
+    </div>
+
+    <h1>Элемент @media при изменении ширины менять стиль, цвет например</h1>
+    <h2 class="title3">Lorem, ipsum dolor.</h2>
+
+</body>
+
+</html>
